@@ -1,0 +1,36 @@
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  height: 45px;
+  position: center;
+  margin: 0px;
+  top: 0;
+  background-color: gray;
+  font-size: 25px;
+  font-family: "Ubuntu" ;
+  padding-top: 10px;
+}
+.navbar ul a {  
+  margin: 0 15px; /* Small margin between links */
+  text-decoration: none;
+}
+
+.navbar ul a{
+ color: white;
+ position: relative;
+}
+
+.navbar ul a::before{
+  left: -1.0em; 
+  opacity: 0; 
+  transition: opacity 0.3s; 
+}
+
+.navbar ul a:hover {
+  color: lightseagreen; 
+}
+
+#logo{
+margin-top: -50px;
+}

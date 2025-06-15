@@ -1,0 +1,9 @@
+#box1{
+position: relative;
+right: -180px !important;
+margin-top: -50px;
+}
+#box2 {
+  color: white;
+  position: relative;
+}
