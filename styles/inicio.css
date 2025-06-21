@@ -1,9 +1,23 @@
-#box1{
-position: relative;
-right: -180px !important;
-margin-top: -50px;
-}
-#box2 {
+.item1 {
+  display: flex;
+  align-items: center; /* vertical alignment */
+  gap: 15px;            /* space between image and text */
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;       /* center the row on the page */
   color: white;
-  position: relative;
+}
+
+.item1 img {
+  width: 300px;         /* adjust image size */
+  border-radius: 10px;  /* optional: rounded corners */
+}
+
+.item1 p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+}
+
+.item1 iframe {
+padding: -px;
 }

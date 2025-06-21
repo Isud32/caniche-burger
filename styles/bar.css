@@ -1,18 +1,26 @@
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+z-index: 1000;
+}
 .navbar ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
   height: 45px;
-  position: center;
-  margin: 0px;
-  top: 0;
+  margin: 10px auto;
+  max-width: 600px;
+  padding: 0 20px;
   background-color: gray;
   font-size: 25px;
   font-family: "Ubuntu" ;
   padding-top: 10px;
+  border-radius: 6px;
 }
 .navbar ul a {  
-  margin: 0 15px; /* Small margin between links */
+  margin: 0 15px; 
   text-decoration: none;
 }
 
@@ -32,5 +40,6 @@
 }
 
 #logo{
-margin-top: -50px;
+  position: absolute;
+margin-top: -75px;
 }
