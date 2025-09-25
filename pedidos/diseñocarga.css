@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Banner */
+.banner {
+    background-color: #000000;
+    padding: 25px 0;
+    text-align: center;
+    border-bottom: 4px solid #f2c94c;
+}
+
+.banner-title {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 3rem;
+    color: #f2c94c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.titulo-pagina {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #8B4513;
+    font-size: 2rem;
+}
+
+/* Recibo de pedido */
+.recibo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.recibo {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+    overflow: hidden;
+    border: 2px solid #8B4513;
+}
+
+.recibo-header {
+    background-color: #8B4513;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.recibo-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.recibo-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.recibo-body {
+    padding: 25px;
+}
+
+
+.info-pedido {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed #ddd;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 8px 0;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.info-value {
+    color: #8B4513;
+    font-weight: bold;
+}
+
+
+.detalle-pedido {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed #ddd;
+}
+
+.detalle-pedido h3 {
+    color: #8B4513;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.pedido-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border-left: 4px solid #8B4513;
+}
+
+.item-nombre {
+    font-weight: bold;
+    color: #333;
+}
+
+.item-precio {
+    font-weight: bold;
+    color: #8B4513;
+}
+
+.especificaciones {
+    background-color: #fff8f0;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ffe0b2;
+}
+
+.espec-label {
+    font-weight: bold;
+    color: #e65100;
+    margin-bottom: 5px;
+}
+
+.espec-texto {
+    color: #555;
+    font-style: italic;
+}
+
+
+.recibo-footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px dashed #ddd;
+}
+
+.estado-pedido {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.estado {
+    color: #d32f2f;
+    background-color: #ffebee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.tiempo-estimado {
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.acciones {
+    margin-top: 15px;
+}
+
+.btn-volver {
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-volver:hover {
+    background-color: #6b3300;
+}
+
+/* Mensaje final */
+.mensaje-final {
+    text-align: center;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-radius: 5px;
+    border-left: 4px solid #4caf50;
+    margin-top: 20px;
+}
+
+.mensaje-final p {
+    color: #2e7d32;
+    font-weight: bold;
+}
+

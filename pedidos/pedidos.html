@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Caniche</title>
+    <link rel="stylesheet" href="pedidosdiseño.css">
+</head>
+<body>
+     <!-- banner -->
+    <header class="banner">
+        <h1 class="banner-title">BURGER CANICHE</h1>
+    </header>
+    <div class="container">
+        <h1>Selecciona tu Hamburguesa</h1>
+        
+        <div class="hamburguesa-options">
+             <!--primera burguer-->
+            <div class="hamburguesa-btn" id="orejas-cheddar">
+                <div class="hamburguesa-nombre">Orejas con Cheddar</div>
+                <div class="hamburguesa-imagen">
+                    <img src="orejascheddar.png" alt="Orejas con Cheddar">
+                </div>
+            </div>
+            
+             <!--segunda burguer-->
+            <div class="hamburguesa-btn" id="lomo-caniche">
+                <div class="hamburguesa-nombre">Lomo de Caniche</div>
+                <div class="hamburguesa-imagen">
+                    <img src="lomodecaniche.png" alt="Lomo de Caniche">
+                </div>
+            </div>
+            
+             <!--tercera burguer-->
+            <div class="hamburguesa-btn" id="ojitos-tomate">
+                <div class="hamburguesa-nombre">Ojitos en Tomate</div>
+                <div class="hamburguesa-imagen">
+                    <img src="ojitostomate.png" alt="Ojitos en Tomate">
+                </div>
+            </div>
+        </div>
+        
+        <!-- boton de especificaciones-->
+        <div class="especificaciones-container">
+            <button class="btn-especificaciones" id="btn-especificaciones">
+                <span>+</span> Agregar Especificaciones al Chef
+            </button>
+            
+            <div class="especificaciones-menu" id="especificaciones-menu">
+                <h3>Especificaciones para el Chef</h3>
+                <textarea id="especificaciones-texto" placeholder="Agrega cualquier especificación especial para tu pedido..."></textarea>
+                <button class="btn-guardar" id="btn-guardar">Guardar</button>
+            </div>
+        </div>
+
+        <!-- botón continuar -->
+        <div class="continuar-container">
+            <button class="btn-continuar" id="btn-continuar">
+                Continuar con el pedido
+            </button>
+        </div>
+    </div>
+
+    <script src="javadiseño.js"></script>
+</body>
+</html>

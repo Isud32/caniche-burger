@@ -1,0 +1,247 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* banner */
+
+.banner {
+    background-color: #000000;
+    padding: 25px 0;
+    text-align: center;
+    border-bottom: 4px solid #f2c94c;
+}
+
+.banner-title {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 3rem;
+    color: #f2c94c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.titulo-pagina {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #8B4513;
+    font-size: 2rem;
+}
+
+/* Recibo de compra */
+.recibo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.recibo {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+    overflow: hidden;
+    border: 2px solid #8B4513;
+}
+
+.recibo-header {
+    background-color: #8B4513;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.recibo-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.recibo-header p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.fecha {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.recibo-body {
+    padding: 20px;
+}
+
+.pedido-detalle, .especificaciones-detalle {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.pedido-detalle h3, .especificaciones-detalle h3 {
+    color: #8B4513;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+#detalle-hamburguesa {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #8B4513;
+}
+
+.hamburguesa-seleccionada {
+    display: flex;
+    align-items: center;
+}
+
+.hamburguesa-seleccionada img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.hamburguesa-info {
+    flex: 1;
+}
+
+.hamburguesa-info h4 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #8B4513;
+}
+
+.hamburguesa-info p {
+    color: #666;
+}
+
+/* Ingreso de nombre */
+.ingreso-nombre {
+    margin-top: 20px;
+}
+
+.ingreso-nombre label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.ingreso-nombre input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    transition: border-color 0.3s;
+}
+
+.ingreso-nombre input:focus {
+    outline: none;
+    border-color: #8B4513;
+}
+
+.ingreso-nombre small {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+
+.recibo-footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px dashed #ddd;
+}
+
+.tiempo-entrega {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #8B4513;
+}
+
+.btn-confirmar {
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.btn-confirmar:hover {
+    background-color: #6b3300;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* Botón volver */
+.volver-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-volver {
+    display: inline-block;
+    color: #8B4513;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #8B4513;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.btn-volver:hover {
+    background-color: #8B4513;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .banner-title {
+        font-size: 2rem;
+    }
+    
+    .titulo-pagina {
+        font-size: 1.5rem;
+    }
+    
+    .recibo {
+        max-width: 100%;
+    }
+    
+    .hamburguesa-seleccionada {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hamburguesa-seleccionada img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

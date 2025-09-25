@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Banner superior*/
+.banner {
+    background-color: #000000;
+    padding: 25px 0;
+    text-align: center;
+    border-bottom: 4px solid #f2c94c;
+}
+
+.banner-title {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 3rem;
+    color: #f2c94c;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #d32f2f;
+}
+
+.hamburguesa-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.hamburguesa-btn {
+    background-color: #d32f2f;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+    justify-content: space-between;
+}
+
+.hamburguesa-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.hamburguesa-nombre {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.hamburguesa-imagen {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.hamburguesa-imagen img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.especificaciones-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-especificaciones {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+.btn-especificaciones:hover {
+    background-color: #388e3c;
+}
+
+.btn-especificaciones span {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.especificaciones-menu {
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.especificaciones-menu.mostrar {
+    display: block;
+}
+
+.especificaciones-menu h3 {
+    margin-bottom: 15px;
+    color: #d32f2f;
+}
+
+#especificaciones-texto {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+.btn-guardar {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-guardar:hover {
+    background-color: #1976d2;
+}
+
+
+@media (min-width: 768px) {
+    .hamburguesa-options {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .hamburguesa-btn {
+        width: calc(33.333% - 15px);
+    }
+}
+
+@media (max-width: 767px) {
+    .hamburguesa-btn {
+        min-height: 250px;
+    }
+    
+    .hamburguesa-nombre {
+        font-size: 20px;
+    }
+}
+
+/* Estilos para el botón continuar */
+.continuar-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn-continuar {
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.btn-continuar:hover {
+    background-color: #6b3300;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.btn-continuar:active {
+    transform: translateY(0);
+}
+
+/* seleccion de la burguer */
+.hamburguesa-btn.seleccionada {
+    border: 3px solid #8B4513;
+    background-color: #f9f5f0;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Pedido - Burger Caniche</title>
+    <link rel="stylesheet" href="diseñofinal.css">
+</head>
+<body>
+    <!-- Banner -->
+    <header class="banner">
+        <h1 class="banner-title">BURGER CANICHE</h1>
+    </header>
+    
+    <div class="container">
+        <h1 class="titulo-pagina">Confirmar Tu Pedido</h1>
+        
+       
+        <div class="recibo-container">
+            <div class="recibo">
+                <div class="recibo-header">
+                    <h2>BURGER CANICHE</h2>
+                    <p>¡Gracias por tu pedido!</p>
+                    <div class="fecha">Fecha: <span id="fecha-actual"></span></div>
+                </div>
+                
+                <div class="recibo-body">
+                    
+                    <div class="pedido-detalle">
+                        <h3>Tu Pedido:</h3>
+                        <div id="detalle-hamburguesa">
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- especificaciones -->
+                    <div class="especificaciones-detalle">
+                        <h3>Especificaciones:</h3>
+                        <p id="texto-especificaciones">Sin especificaciones adicionales</p>
+                    </div>
+                    
+                    <div class="ingreso-nombre">
+                        <label for="nombre-cliente">Ingresa tu nombre/apodo para que podamos llamarte:</label>
+                        <input type="text" id="nombre-cliente" placeholder="EJ: tooooobi">
+                        <small>Este nombre nos ayudará a identificar tu pedido</small>
+                    </div>
+                </div>
+                
+                <div class="recibo-footer">
+                  <p class="tiempo-entrega">Tiempo estimado de entrega: 20-30 minutos</p>
+                  <button class="btn-confirmar" id="btn-confirmar" onclick="window.location.href='carga.html'">
+                       Confirmar Pedido
+                       </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="volver-container">
+            <a href="pedidos.html" class="btn-volver">← Volver a Selección</a>
+        </div>
+    </div>
+
+    <script src="javafinal.js"></script>
+</body>
+</html>

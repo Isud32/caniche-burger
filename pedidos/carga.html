@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Pedido - Burger Caniche</title>
+    <link rel="stylesheet" href="diseñocarga.css">
+</head>
+<body>
+    <!-- Banner -->
+    <header class="banner">
+        <h1 class="banner-title">BURGER CANICHE</h1>
+    </header>
+    
+    <div class="container">
+        <h1 class="titulo-pagina">¡Pedido Confirmado!</h1>
+        
+      
+        <div class="recibo-container">
+            <div class="recibo">
+                <div class="recibo-header">
+                    <h2>BURGER CANICHE</h2>
+                    <p>Recibo de Pedido</p>
+                </div>
+                
+                <div class="recibo-body">
+                    <!-- información del pedido -->
+                    <!--aca iria la info de la base de datos, nombre, hora, numero de pedido, etc  etc-->
+                </div>    
+                    <div class="detalle-pedido">
+                        <h3>Detalle del Pedido</h3>
+                        <div class="pedido-item">
+                            <span class="item-nombre" id="nombre-hamburguesa">En breve entregaremos tu pedido...</span>
+                           
+                        </div>
+                   
+                
+                <div class="recibo-footer">
+                    <p class="estado-pedido">Estado: <span class="estado">EN PREPARACIÓN</span></p>
+                    <p class="tiempo-estimado">Tiempo estimado: 20-25 minutos</p>
+                    <div class="acciones">
+                        <button class="btn-volver" onclick="window.location.href='pedidos.html'">Hacer Otro Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
